@@ -1,2 +1,2 @@
-# Elijah-protfolio
+# elijah-portfolio
  
