@@ -89,7 +89,7 @@ a:hover {
 	display: block;
 	overflow: hidden;
 	height: 100vh;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/photo.jpg');
+	background-image: url('images/bg-img.webp');
 	background-size: cover;
 	background-position: center;
 	transform: scale(1) rotateX(0);
