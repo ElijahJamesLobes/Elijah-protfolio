@@ -327,7 +327,7 @@ body.about-on .about-section {
 	background-size: 30px 30px;
 
 	/*This is where i changed the direction of the arrow in front of the contact and its position*/
-	transform: translateX(140%) rotate(180deg);
+	transform: translateX(450%) rotate(180deg);
 	
 	
 	background-image: url('http://www.ivang-design.com/svg-load/portfolio/left.svg');
