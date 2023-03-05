@@ -228,6 +228,7 @@ body.nature-on .hero-section {
 }
 .about-section {
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -275,7 +276,7 @@ body.about-on .about-section {
 }
 .about-section img {
   width: 100px;
-  height: 100px;
+  height: 120px;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
@@ -526,4 +527,8 @@ body.nature-on .nature-section {
   opacity: 0.8;
   border-radius: 50%;
   box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+#more {
+  display: none;
 }

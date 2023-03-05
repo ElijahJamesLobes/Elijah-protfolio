@@ -7,12 +7,124 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="icon" href="images/ep red.png" height="100%" width="100%" />
+    <link
+      rel="icon"
+      href="images/ep red.png"
+      sizes="16x16 32x32"
+      type="image/png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      h2 {
+        color: #000;
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+        position: relative;
+        margin: 30px 0 60px;
+      }
+      h2::after {
+        content: "";
+        width: 100px;
+        position: absolute;
+        margin: 0 auto;
+        height: 4px;
+        border-radius: 1px;
+        background: #1abc9c;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+      }
+      .carousel .carousel-item {
+        color: #999;
+        overflow: hidden;
+        min-height: 120px;
+        font-size: 13px;
+      }
+      .carousel .media {
+        position: relative;
+        padding: 0 0 0 20px;
+      }
+      .carousel .media img {
+        width: 75px;
+        height: 75px;
+        display: block;
+        border-radius: 50%;
+      }
+      .carousel .testimonial-wrapper {
+        padding: 0 10px;
+      }
+      .carousel .testimonial {
+        color: #808080;
+        position: relative;
+        padding: 15px;
+        background: #f1f1f1;
+        border: 1px solid #efefef;
+        border-radius: 3px;
+        margin-bottom: 15px;
+      }
+      .carousel .testimonial::after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        display: block;
+        background: #f1f1f1;
+        border: 1px solid #efefef;
+        border-width: 0 0 1px 1px;
+        position: absolute;
+        bottom: -8px;
+        left: 46px;
+        transform: rotateZ(-46deg);
+      }
+      .carousel .star-rating li {
+        padding: 0 2px;
+      }
+      .carousel .star-rating i {
+        font-size: 16px;
+        color: #ffdc12;
+      }
+      .carousel .overview {
+        padding: 3px 0 0 15px;
+      }
+      .carousel .overview .details {
+        padding: 5px 0 8px;
+      }
+      .carousel .overview b {
+        text-transform: uppercase;
+        color: #1abc9c;
+      }
+      .carousel .carousel-indicators {
+        bottom: -70px;
+      }
+      .carousel-indicators li,
+      .carousel-indicators li.active {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 1px 2px;
+        box-sizing: border-box;
+      }
+      .carousel-indicators li {
+        background: #e2e2e2;
+        border: 4px solid #fff;
+      }
+      .carousel-indicators li.active {
+        color: #fff;
+        background: #1abc9c;
+        border: 5px double;
+      }
+    </style>
   </head>
   <body>
     <!-- partial:index.partial.html -->
@@ -27,7 +139,7 @@
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-12 text-center">
-              <img src="images/EP-red.png" alt="Name" />
+              <img src="images/EP-red.png" alt="Name" width="40%" />
               <!--<h1>Elijah James</h1>-->
             </div>
             <!--<div class="col-12 text-center mb-2">
@@ -40,7 +152,7 @@
 						</div>
 					  </div> -->
 
-            <div class="col-12 text-center mt-4 mt-lg-5">
+            <div class="col-12 text-center mt-lg-5">
               <p>
                 <!-- <span class="travel hover-target">Instagram</span>  -->
                 <span class="wildlife hover-target">YouTube</span>
@@ -58,22 +170,404 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 text-center">
-              <img
-                src="http://www.ivang-design.com/svg-load/portfolio/freel.jpg"
-                alt=""
-              />
+              <img src="images/profile.jpeg" alt="" style="margin-top: -10px" />
             </div>
-            <div class="col-lg-8 text-center mt-4">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                odit modi reprehenderit quam facere architecto quod ad sequi
-                iste atque? Eveniet possimus consectetur odit. Laborum
-                blanditiis qui eligendi error dicta.
+            <div class="col-lg-12 text-center mt-4">
+              <p style="margin-top: 1px; margin-bottom: 1px; font-size: 13px">
+                I'm a highly-motivated editor with more than 5 years of
+                experience in the field of short-form content across various
+                platforms. I've honed my skills in video editing,
+                cinematography, social media management, and digital marketing.
+                I've decided that it's the right time to turn my five-year
+                journey of learning into a team of creators that can assure
+                quality content to the clients that work with me. This team will
+                consist of competent video editors, skilled storyboarders and
+                animators, that will enhance every video through specific sound
+                effects and zoom cuts, making it easier to understand and more
+                engaging for viewers, and I'm excited to work with a team of
+                like-minded grinders to help accomplish your business goals.
               </p>
             </div>
-            <div class="col-12 text-center">
-              <p><span>Elijah James Production</span></p>
-            </div>
+            <body>
+              <div class="container-lg">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 style="color: rgb(147, 104, 196)">
+                      Client <b>Feedback</b>
+                    </h2>
+                    <div
+                      id="myCarousel"
+                      class="carousel slide"
+                      data-ride="carousel"
+                    >
+                      <!-- Carousel indicators -->
+                      <ol class="carousel-indicators">
+                        <li
+                          data-target="#myCarousel"
+                          data-slide-to="0"
+                          class="active"
+                        ></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                      <!-- Wrapper for carousel items -->
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="row">
+                            <div class="col-sm-6 col-lg-12">
+                              <div class="testimonial-wrapper">
+                                <div class="testimonial">
+                                  Elijah is an outstanding video editor who
+                                  consistently demonstrates his talent and
+                                  dedication to his work. He is highly reliable
+                                  and always meets deadlines, ensuring that
+                                  projects are completed on time and to a high
+                                  standard. <span id="dots">...</span
+                                  ><span id="more">
+                                    Elijah's attention to detail is remarkable,
+                                    and he is always striving for perfection in
+                                    every aspect of his work. His passion for
+                                    video editing is evident in the quality of
+                                    his output, which is always creative,
+                                    engaging and professional. He is a great
+                                    asset to our company and a true pleasure to
+                                    work with. Elijah's dedication, reliability,
+                                    and exceptional attention to detail make him
+                                    a valuable member of our team.</span
+                                  >
+                                  <button
+                                    onclick="myFunction()"
+                                    id="myBtn"
+                                    type="button"
+                                    class="btn-sm btn-outline-dark"
+                                  >
+                                    Read more
+                                  </button>
+                                </div>
+                                <div class="media">
+                                  <img
+                                    src="/examples/images/clients/1.jpg"
+                                    class="mr-3"
+                                    alt=""
+                                  />
+                                  <div class="media-body">
+                                    <div class="overview">
+                                      <div class="name">
+                                        <b>Raina Hladik</b>
+                                      </div>
+                                      <div class="details">
+                                        Project Manager at Surgo Media
+                                      </div>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star-half-o"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col-sm-6">
+                              <div class="testimonial-wrapper">
+                                <div class="testimonial">
+                                  Vestibulum quis quam ut magna consequat
+                                  faucibus. Pellentesque eget mi suscipit
+                                  tincidunt. Utmtc tempus dictum. Pellentesque
+                                  virra. Quis quam ut magna consequat faucibus,
+                                  metus id mi gravida.
+                                </div>
+                                <div class="media">
+                                  <img
+                                    src="/examples/images/clients/2.jpg"
+                                    class="mr-3"
+                                    alt=""
+                                  />
+                                  <div class="media-body">
+                                    <div class="overview">
+                                      <div class="name">
+                                        <b>Antonio Moreno</b>
+                                      </div>
+                                      <div class="details">
+                                        Web Developer / SoftBee
+                                      </div>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star-o"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> -->
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="row">
+                            <div class="col-sm-6 col-lg-12">
+                              <div class="testimonial-wrapper">
+                                <div class="testimonial">
+                                  Elijah is an excellent video editor who never
+                                  misses a deadline. In fact, he often completes
+                                  his projects ahead of schedule. He is also an
+                                  extremely careful and thorough editor, always
+                                  making sure that his work is of the highest
+                                  quality. Elijah is a pleasure to work with and
+                                  a true asset to the team.<span id="dots"
+                                    >...</span
+                                  ><span id="more">
+                                    He is creative, engaging, and professional,
+                                    and his attention to detail is
+                                    remarkable.</span
+                                  >
+                                  <button
+                                    onclick="myFunction()"
+                                    id="myBtn12"
+                                    type="button"
+                                    class="btn-sm btn-outline-dark"
+                                  >
+                                    Read more
+                                  </button>
+                                </div>
+                                <div class="media">
+                                  <img
+                                    src="/examples/images/clients/3.jpg"
+                                    class="mr-3"
+                                    alt=""
+                                  />
+                                  <div class="media-body">
+                                    <div class="overview">
+                                      <div class="name">
+                                        <b>Alexie Dela Cuesta</b>
+                                      </div>
+                                      <div class="details">
+                                        COO at Surgo Media
+                                      </div>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star-o"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col-sm-6">
+                              <div class="testimonial-wrapper">
+                                <div class="testimonial">
+                                  Vestibulum quis quam ut magna consequat
+                                  faucibus. Pellentesque eget mi suscipit
+                                  tincidunt. Utmtc tempus dictum. Pellentesque
+                                  virra. Quis quam ut magna consequat faucibus,
+                                  metus id mi gravida.
+                                </div>
+                                <div class="media">
+                                  <img
+                                    src="/examples/images/clients/4.jpg"
+                                    class="mr-3"
+                                    alt=""
+                                  />
+                                  <div class="media-body">
+                                    <div class="overview">
+                                      <div class="name">
+                                        <b>Mary Saveley</b>
+                                      </div>
+                                      <div class="details">
+                                        Graphic Designer / MarsMedia
+                                      </div>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star-o"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> -->
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="row">
+                            <div class="col-sm-6 col-lg-12">
+                              <div class="testimonial-wrapper">
+                                <div class="testimonial">
+                                  Elijah is a master of video editing and has
+                                  never missed a cutoff date. In fact, he often
+                                  finishes his projects before he was asked to.
+                                  He is also an incredibly careful and thorough
+                                  editor, always making sure that his work is
+                                  done perfectly. Elijah is a treat to work with
+                                  and an incredible asset.<span id="dots"
+                                    >...</span
+                                  ><span id="more">
+                                    His creativity is off the charts, and his
+                                    professionalism is second to none. In
+                                    addition, Elijah has a great attention to
+                                    detail, which gives his work a touch of
+                                    magic. He is also extremely reliable, making
+                                    him a wonderful addition to any team.</span
+                                  >
+                                  <button
+                                    onclick="myFunction()"
+                                    id="myBtn12"
+                                    type="button"
+                                    class="btn-sm btn-outline-dark"
+                                  >
+                                    Read more
+                                  </button>
+                                </div>
+                                <div class="media">
+                                  <img
+                                    src="/examples/images/clients/5.jpg"
+                                    class="mr-3"
+                                    alt=""
+                                  />
+                                  <div class="media-body">
+                                    <div class="overview">
+                                      <div class="name">
+                                        <b>Bryan Giron</b>
+                                      </div>
+                                      <div class="details">
+                                        Owner at Surgo Media
+                                      </div>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star-o"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col-sm-6">
+                              <div class="testimonial-wrapper">
+                                <div class="testimonial">
+                                  Vestibulum quis quam ut magna consequat
+                                  faucibus. Pellentesque eget mi suscipit
+                                  tincidunt. Utmtc tempus dictum. Pellentesque
+                                  virra. Quis quam ut magna consequat faucibus,
+                                  metus id mi gravida.
+                                </div>
+                                <div class="media">
+                                  <img
+                                    src="/examples/images/clients/6.jpg"
+                                    class="mr-3"
+                                    alt=""
+                                  />
+                                  <div class="media-body">
+                                    <div class="overview">
+                                      <div class="name">
+                                        <b>John Williams</b>
+                                      </div>
+                                      <div class="details">
+                                        Web Designer / UniqueDesign
+                                      </div>
+                                      <div class="star-rating">
+                                        <ul class="list-inline">
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star"></i>
+                                          </li>
+                                          <li class="list-inline-item">
+                                            <i class="fa fa-star-o"></i>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </body>
           </div>
         </div>
       </div>
@@ -92,9 +586,14 @@
               >
             </div>
             <div class="col-12 text-center social mt-4">
-              <a href="#" class="hover-target">instagram</a>
-              <a href="#" class="hover-target">youtube</a>
-              <a href="#" class="hover-target">tiktok</a>
+              <!-- <a href="#" class="hover-target">instagram</a> -->
+              <a
+                href="https://www.linkedin.com/in/elijah-james-913667218/"
+                class="hover-target"
+                style="font-size: 18px"
+                >Linkedin
+              </a>
+              <!-- <a href="#" class="hover-target">tiktok</a> -->
             </div>
           </div>
         </div>
@@ -294,48 +793,36 @@
 					</p>-->
           </div>
 
-          <div class="col-md-6 col-lg-6">
+          <div class="col-md-6 col-lg-4">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe
-                src="https://drive.google.com/file/d/1IXMmgaUxZWR4Z5XJARJMtBy9ben_Xn6-/preview"
+                src="https://drive.google.com/file/d/11exj2_V-MsehrxtAotEBu8--RPl_YOly/preview"
                 allow="autoplay"
                 allowfullscreen
               ></iframe>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6">
+          <div class="col-md-6 col-lg-4">
             <!-- <img
               src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
               alt=""
             /> -->
             <div class="embed-responsive embed-responsive-16by9">
               <iframe
-                src="https://drive.google.com/file/d/17cqwFSmvEe8oRA308Zkf0Waj9tflJAok/preview"
+                src="https://drive.google.com/file/d/1ao-OOfew46aC3lfRHZke-SVqYgGBBrJp/preview"
                 allow="autoplay"
                 allowfullscreen
               ></iframe>
             </div>
           </div>
-          <div class="col-md-6 col-lg-5">
+          <div class="col-md-6 col-lg-4">
             <!-- <img
               src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
               alt=""
             /> -->
             <div class="embed-responsive embed-responsive-16by9">
               <iframe
-                src="https://drive.google.com/file/d/1r4hmKSaeawpJzGCyREnk4n5FBx_Xojkb/preview"
-                allow="autoplay"
-              ></iframe>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-7">
-            <!-- <img
-              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
-              alt=""
-            /> -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                src="https://drive.google.com/file/d/126lNbU7QyQAmIlfAcjrOBnzOdZiVJova/preview"
+                src="https://drive.google.com/file/d/1ssXRgftCBozbkW7OW6fo1k09E-cJe4mE/preview"
                 allow="autoplay"
               ></iframe>
             </div>
@@ -345,12 +832,204 @@
               src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
               alt=""
             /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1QYExGHUCQWsoyafkqLDRuSkVPgMniZeZ/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <!-- <img
               src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
               alt=""
             /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1X9O7HFBQbVVovCopaMP5Z5Xk912HVlRI/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1KOISBmEWVkAT91ZU28A4_zhqNOyQZtEm/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1lU8vOcvNy2_qN1z4Qx2OD7T-sQAnCNY8/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/154XnjajwlQoxeM8B114EWwPSEXKOTv8Y/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1E2fKo2fLShj_8A-X_doZOveonDthf69K/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1GWXbezCBrSgST4KwyahZJA3o6TtNYHwX/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1QwPqBihI9dcLHU_RllaU5PRXv8Q5CklN/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1KwUmssgHLqln8tktX3j0977pyvlK2ujx/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1s6y-1x16zfW7rFZV94YFowDC_KQdY8tk/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1bhQ6GahB2H0ybxzEGeRXHWpnX5gcK8QW/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1XPAVWBhDl37WGsbxqgPqpPd85jemApxN/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1df5KKQrWEaT2bUeLvqVdhdojmYVv-nJT/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1uDHV_9Gj3_tt8ymEH_zjwv_ZL5sjJRzY/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/16SvV5jySS6zFb4yZnwbOj3ZjwYwqBcKu/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/15gB39yzPsjBGYx01nGqY5sDuJZMxPIJ0/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- <img
+              src="http://www.ivang-design.com/svg-load/portfolio/photo-p.jpg"
+              alt=""
+            /> -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                src="https://drive.google.com/file/d/1u3PTeUofNSkztzIg2PtSQIvutIAQt1WS/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
